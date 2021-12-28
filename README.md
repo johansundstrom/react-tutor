@@ -27,10 +27,14 @@ En första studie av React
 ## Installera
 
 * Uppdatera ```node```
-* ```npx create-react-app .```
+* ```npx create-react-app .``` eller ```create-react-app react-app```
 
 
 * ```npm start``` för att starta
 * ```npm run build``` skapar production
 * developer - production state
-* 
+
+VS Code extensions
+* Simple React Snippets
+* Prettier - Code formatter
+
