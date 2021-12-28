@@ -28,6 +28,10 @@ En första studie av React
 
 * Uppdatera ```node```
 * ```npx create-react-app .``` eller ```create-react-app react-app```
+* Installerar
+  * Utvecklingsserver
+  * Webpack
+  * Babel
 
 
 * ```npm start``` för att starta
@@ -38,3 +42,12 @@ VS Code extensions
 * Simple React Snippets
 * Prettier - Code formatter
 
+Installera Bootstrap
+* ```npm install bootstrap```
+
+
+## Components
+
+* Alla delar i ett UI utgörs av Components
+* En Component inleds med en import (snippet: IMRC)
+* Därefter en class (snippet: CC)
