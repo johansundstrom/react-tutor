@@ -3,13 +3,17 @@ En första studie av React
 
 ## Systemet
 
-* React kommer från Facebook (2013)
+* React kommer från Facebook (~2012)
 * React mest populär. Angular och Vue är andra
 * React är ett library, Angular är ett framework
+
+### Components
+
 * Components - isolerade delar av UI
-* Root Component är oftast App
-* App innehåller andra Components i ett träd av Components
-* En Component skrivs som en Class och innehåller state = {}; och render() {...}
+* Root Component är oftast ```App```
+* ```App``` innehåller andra Components i ett *träd av Components*
+* Components är återanvändningsbara
+* En Component skrivs som en Class och innehåller state = {}; och render() {...} 
 
 ```class Like {
   state = {};
@@ -18,8 +22,12 @@ En första studie av React
 }
 ```
 
-* React Element är en virtuell version av DOM som finns i minnet
-* React reagerar på state förändringar och uppdaterar DOM
+* state innehåller data som ska renderas
+* render beskriver Components utseende
+
+* React Element är en virtuell version av DOM som finns i minnet - Virtual DOM
+* React reagerar på state förändringar och uppdaterar Browser DOM
+  * State change in Virtual DOM --> compute diff to browser DOM --> Re-render Browser DOM 
 * React view ska vara uppdaterat enligt dess state
 
 
@@ -27,7 +35,7 @@ En första studie av React
 ## Installera
 
 * Uppdatera ```node```
-* ```npx create-react-app .``` eller ```create-react-app react-app```
+* ```npx create-react-app .``` eller ```create-react-app react-app``` eller ```npm i -g create-react-app```
 * Installerar
   * Utvecklingsserver
   * Webpack
@@ -39,15 +47,18 @@ En första studie av React
 * developer - production state
 
 VS Code extensions
-* Simple React Snippets
-* Prettier - Code formatter
+* Simple React Snippets - Burke Holland
+* Prettier Code formatter - Esben Petersen
 
 Installera Bootstrap
 * ```npm install bootstrap```
-
 
 ## Components
 
 * Alla delar i ett UI utgörs av Components
 * En Component inleds med en import (snippet: IMRC)
 * Därefter en class (snippet: CC)
+
+## Skapa en React App
+
+* ```create-react-app 
