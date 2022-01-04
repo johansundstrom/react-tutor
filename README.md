@@ -4,7 +4,7 @@ En första studie av React
 ## Systemet
 
 * React kommer från Facebook (~2012)
-* React mest populär. Angular och Vue är andra
+* React mycket populär. Angular och Vue är andra
 * React är ett library, Angular är ett framework
 
 ### Components
