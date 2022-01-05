@@ -6,7 +6,7 @@ En första studie av React
 * React kommer från Facebook (~2012)
 * React mycket populär. Angular och Vue är andra
 * React är ett library, Angular är ett framework
-
+---
 ### Components
 
 * Components - isolerade delar av UI
