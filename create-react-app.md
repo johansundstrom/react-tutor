@@ -48,7 +48,7 @@ function App() {
 }
 ```
 
-15. Besvara *I vilken datatyp är innehållet skrivet?*
+15. Besvara *I vilken datatyp är innehållet i ```return``` skrivet?*
 
 16. ```npm i bootstrap```
 9. 
