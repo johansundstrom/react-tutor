@@ -7,11 +7,11 @@
 5. ```npm run build``` - skapar en deploymentmiljö
 6. ```npm test``` - Startar testläge
 7. Starta ```npm start```
-8. Studera ```/public/index.html```
+8. Öppna ```/public/index.html```
 9. Notera ```<div id="root"></div>```
-6. Studera ```/public/index.js```
-1.  Notera ```import App from './App';```
-1. Notera 
+6. Öppna ```/public/index.js```
+1. Notera ```import App from './App';```
+1. Notera...
 
 ```
 ReactDOM.render(
@@ -21,6 +21,34 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
+
+1. Öppna ```/src/app.js```
+2. Notera
+
+```
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+```
+
+1. Besvara /I vilken datatyp är innehållet skrivet?/
 
 8. ```npm i bootstrap```
 9. 
