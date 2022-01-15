@@ -22,8 +22,8 @@ ReactDOM.render(
 );
 ```
 
-1. Öppna ```/src/app.js```
-2. Notera
+13. Öppna ```/src/app.js```
+14. Notera
 
 ```
 function App() {
@@ -48,7 +48,7 @@ function App() {
 }
 ```
 
-1. Besvara /I vilken datatyp är innehållet skrivet?/
+15. Besvara *I vilken datatyp är innehållet skrivet?*
 
-8. ```npm i bootstrap```
+16. ```npm i bootstrap```
 9. 
