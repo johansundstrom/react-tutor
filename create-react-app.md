@@ -106,6 +106,18 @@ export default Counter;
 
 6. Ersätt ```return``` med ```return JSX```
 7. ```return <h1>Hello from component</h1>```
+8. I ```src/index.js``` 
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.css';
+import  Counter from './components/counter';
+
+//const element = <h1>Hello World 2</h1>; //JSX
+ReactDOM.render(<Counter />, document.getElementById('root'));
+```
+
 
 24. ```npm i bootstrap```
 25. 
