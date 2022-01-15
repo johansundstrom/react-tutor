@@ -3,19 +3,15 @@
 1. Skapa mapp och flytta dit | Från mapp skriv ```create react-app react-app```
 2. I VS Code ```npx create-react-app .```
 3. Notera...
-
-  1. ```npm start``` - startar utvecklingsmiljön
-  2. ```npm run build``` - skapar en deploymentmiljö
-  3. ```npm test``` - Startar testläge
- 
-4. Starta ```npm start```
-5. Studera ```/public/index.html```
-
-  * Notera ```<div id="root"></div>```
-
+4. ```npm start``` - startar utvecklingsmiljön
+5. ```npm run build``` - skapar en deploymentmiljö
+6. ```npm test``` - Startar testläge
+7. Starta ```npm start```
+8. Studera ```/public/index.html```
+9. Notera ```<div id="root"></div>```
 6. Studera ```/public/index.js```
-  * Notera ```import App from './App';```
-  * Notera 
+1.  Notera ```import App from './App';```
+1. Notera 
 
 ```
 ReactDOM.render(
