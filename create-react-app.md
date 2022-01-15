@@ -8,7 +8,9 @@
   3. ```npm test``` - Startar testläge
 4. Starta ```npm start```
 5. Studera ```/public/index.html```
+
   * Notera ```<div id="root"></div>```
+
 6. Studera ```/public/index.js```
   * Notera ```import App from './App';```
   * Notera 
