@@ -55,9 +55,18 @@ Installera Bootstrap
 
 ## Components
 
-* Alla delar i ett UI utgörs av Components
+* Alla delar i ett UI utgörs av React Components
+* Composing components
+  * Skapa ett träd av komponenter
+  * Skapa en Component som importerar andra Components
+  * Filnamn kan gärna döpas till plural
 * En Component inleds med en import (snippet: IMRC)
 * Därefter en class (snippet: CC)
+* 
+
+### Skicka data till Component
+
+* 
 
 ## Skapa en React App
 
