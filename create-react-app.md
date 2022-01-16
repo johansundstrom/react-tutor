@@ -80,16 +80,15 @@ console.log(element);
 1. ```https://getbootstrap.com/docs/versions``` Flera versioner
 2. Alternativ: ```npm install bootstrap@4.5```
 3. I consolen ```npm install bootstrap``` för senaste
-4. 
 
 # En första React Component
 
-1. Installera extension ```Simple React Snippets``` ab Burke Holland
-1. Skapa mappen ```/src/components```
-2. Skapa filen ```counter.jsx``` där
-3. I filen skriv ```imrc```
-4. ```cc```
-5. Använd multiradersfunktionen (markera + alt, esc avslutar) och ge klassen ett namn
+1. Installera extension ```Simple React Snippets``` av Burke Holland
+2. Skapa mappen ```/src/components```
+3. Skapa filen ```counter.jsx``` där
+4. I filen skriv ```imrc```
+5. ```cc```
+6. Använd multiradersfunktionen (markera + alt, esc avslutar) och ge klassen ett namn
 
 ```
 import React, { Component } from 'react'
@@ -104,9 +103,12 @@ class Counter extends Component {   // Counter utökar Component som importeras 
 export default Counter;
 ```
 
-6. Ersätt ```return``` med ```return JSX```
-7. ```return <h1>Hello from component</h1>```
-8. I ```src/index.js``` 
+7. Ersätt ```return``` med ```return JSX```
+8. ```return <h1>Hello from component</h1>```
+9. I ```src/index.js``` 
+10. JavaScript lägger till ett osynligt ```return ;``` (semikolon) om inget finns efter return
+11. Bädda in JSX inom ```(...)``` så fungerar det
+
 
 ```
 import React from 'react';
@@ -118,6 +120,19 @@ import  Counter from './components/counter';
 ReactDOM.render(<Counter />, document.getElementById('root'));
 ```
 
+# Inbäddade uttryck (Embedded expressions)
 
+1. Prova att lägga till ytterligare HTML-liknande element i JSX i filen ```/src/component/counter.jsx```
+2. Genererar felmmeddelande: JSX uttryck måste ha ett överliggande uttryck
+3. Påminnelse om att React skapar ```React.createElement('h1')```
+4. Testa uttrycken https://babeljs.io/repl med <div> omkring
+5. Inspektera HTML-koden i webbläsaren, nu har vi två DIV's
+6. Om detta är oönskat går det att ersätta DIV i JSX mot ```React.Fragment```
+7. Inspektera
+  
+### Dynamiskt innehåll i JSX
+  
+1. Inom Component-filen lätt till ```count: 0``` inom State-objektet
+2. Lägg till ```<span>{this.state.count}</span>``` inom return-argumentet
 24. ```npm i bootstrap```
 25. 
