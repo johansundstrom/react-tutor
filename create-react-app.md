@@ -23,8 +23,8 @@ ReactDOM.render(
 );
 ```
 
-13. Öppna ```/src/app.js```
-14. Notera
+14. Öppna ```/src/app.js```
+15. Notera
 
 ```
 function App() {
@@ -49,7 +49,7 @@ function App() {
 }
 ```
 
-15. Besvara *I vilken datatyp är innehållet i ```return``` skrivet?*
+16. Besvara *I vilken datatyp är innehållet i ```return``` skrivet?*
 17. Svar: JSX (JavaScript Syntax Extension) som möjliggör samma syntax som HTML
 18. JSX är ett XML-tillägg som tillåter att skriva HTML liknande kod
 19. JSX behöver kompileras (Babel) i en *transpiler* (kod till kod)
@@ -134,5 +134,32 @@ ReactDOM.render(<Counter />, document.getElementById('root'));
   
 1. Inom Component-filen lätt till ```count: 0``` inom State-objektet
 2. Lägg till ```<span>{this.state.count}</span>``` inom return-argumentet
+3. Inom ```{...}``` kan vilken valid JS skrivas som helst. T.ex. funktioner
+4. Skapa funktionen
+  
+```
+formatCount() {
+  return this.state.count === 0 ? 'Zero' : this.state.count;
+}
+```
+
+5. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+6. Ändra ```<span>{this.state.count}</span>``` till ```<span>{this.formatCount()}</span>```
+  
+### Attribut i JSX
+  
+7. Attribut kan vara dynamiska enligt principen ```<img src={this.state.imageUrl} alt="" />
+8. CSS-klasser måste heta ```classname```
+9. Definiera egna stilar genom...
+  
+```
+styles = {
+  fontSize: 10,
+  fontWeight: bold
+};
+```
+  
+10. ```<span style={this.styles} ... </span>```
+  
 24. ```npm i bootstrap```
 25. 
