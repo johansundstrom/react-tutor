@@ -159,7 +159,22 @@ styles = {
 };
 ```
   
-10. ```<span style={this.styles} ... </span>```
-  
+10. Alla CSS-stilar skrivs i camel-case
+11. ```<span style={this.styles} ... </span>```
+12. Eller ```<span style={{ fontSize: 20 }} ```
+                   
+### Dynamiska CSS-klasser
+                   
+```
+let classes = "badge m-2 ";
+classes += (this.state.count === 0) ? "bg-warning text-dark" : "bg-secondary";
+```
+                   
+13. Markera raderna och Refactor till class Counter, döp till ```getBadgeClass```
+14. Anropa ```<span className={this.getBadgeClasses()}>...</span>```
+15. Radera ```let classes = this.getBadgeClasses();```
+
+//Rendering lists - 50:58 kommer upp
+
 24. ```npm i bootstrap```
 25. 
