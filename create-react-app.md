@@ -174,9 +174,9 @@ classes += (this.state.count === 0) ? "bg-warning text-dark" : "bg-secondary";
 14. Anropa ```<span className={this.getBadgeClasses()}>...</span>```
 15. Radera ```let classes = this.getBadgeClasses();```
 
-## Render list
+## Rendera dynamiska listor
 
-1. I `render() { return })` ange 
+1. Inom `render() { return })` ange 
 
 ```
 <ul>
@@ -184,6 +184,55 @@ classes += (this.state.count === 0) ? "bg-warning text-dark" : "bg-secondary";
 </ul>
 ```
 
+2. Ovanstående genererar ett ´unique "key" error`
+3. `<l1>` behöver ett ´key id´
+
+```
+{ this.state.tags.map(tag => <li key={tag}>{ tag }</li>)}
+```
+
+## Villkorlig rendering
+
+1. Med en helperMethod kan JavaScript if testa villkor
+
+```
+renderTags() {
+  if (this..state.tgs.length === 0) return <p>tomt</p>;  // eller ... return null
+}
+
+...
+
+{ this.renderTags() }
+```
+Ett alternativ till...
+
+```
+{ this.state.tags.lenght === 0 && "tomt" }  // första delen blir ´true´ + boolesk AND 
+```
+
+## Hantera events
+
+1. Använd JavaScript events i camelcase-format. `onclick` fungerar alltså inte.
+2. Också, eventHandlers har inte tillgång till `this`
+3. `this` följer inte med function() men följer obj.method().
+4. Det är då Bind kommer in
+
+## Bind Event handlers
+
+```
+constructor() {
+  super();
+  this.handleIncrement = this.handleIncrement.bind(this);
+}
+```
+
+eller arrow functions
+
+```
+handleIncrement = () => {
+  console.log('+ clicked', this);
+}
+```
 
 //Rendering lists - 50:58 kommer upp
 
