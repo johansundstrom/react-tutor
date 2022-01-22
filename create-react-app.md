@@ -174,6 +174,17 @@ classes += (this.state.count === 0) ? "bg-warning text-dark" : "bg-secondary";
 14. Anropa ```<span className={this.getBadgeClasses()}>...</span>```
 15. Radera ```let classes = this.getBadgeClasses();```
 
+## Render list
+
+1. I `render() { return })` ange 
+
+```
+<ul>
+  { this.state.tags.map(tag => <li></li>)}
+</ul>
+```
+
+
 //Rendering lists - 50:58 kommer upp
 
 24. ```npm i bootstrap```
