@@ -226,7 +226,8 @@ constructor() {
 }
 ```
 
-eller arrow functions
+eller med arrow functions (som hanterar ´this´ annurlunda).
+
 
 ```
 handleIncrement = () => {
@@ -234,7 +235,30 @@ handleIncrement = () => {
 }
 ```
 
-//Rendering lists - 50:58 kommer upp
+* En normal funktion's ´this´ ärver från sitt förälder objekt (inom sitt scope)
+* En arrow function ärver ´this´ från parent scope (ovanför sitt scope)
+
+## Uppdatera state
+
+```
+handleIncrement = () => {
+  this.setState({ count: this.state.count +1 })
+}
+```
+
+* Ovan är `setState` av betydelse.
+
+## Vad händer när State förändras?
+
+1. Klick eventet anropar en arrow funktion som gör ´setState´
+2. React schemalägger då ett asynkront anrop till `render() {}`
+3. `render()` returnerar JSX i ett uppdaterat virtuellt DOM
+4. React beräknar skillnaderna mellan Virtuell DOM och Browser DOM
+5. Bara en skillnad finns i JSX-span i Virtuella DOM nämligen `{this.formatCount()}`
+6. Att endast `span elementet` uppdateras går att se genom att inspektera HTML-koden
+
+
+//Passing Event Arguments - 1:12:58 kommer upp
 
 24. ```npm i bootstrap```
 25. 
